@@ -198,7 +198,7 @@ void cameraCapture(std::vector<Image>& images) {
         feed >> frame;
 
         if ( frame.data ) {
-            Image display_frame( frame );
+            Image display_frame( frame.clone() );
 
             // We created a copy of the frame above and insert text giving instructions
             // to the user. Copy is made so final panorama will not have ugly warped text.
