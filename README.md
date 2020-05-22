@@ -65,3 +65,21 @@ This command allows you to use the demo image datasets, which are enumerated fro
 - OpenCV
 - <a href="https://github.com/jarro2783/cxxopts" target="_blank">cxxopts</a> (included)
 - <a href="https://github.com/samhocevar/portable-file-dialogs" target="_blank">portable-file-dialogs</a> (included)
+
+## Results
+
+<div align="center">
+    <img src="img/goldengate-panorama.png">
+</div>
+
+<div align="center">
+    <img src="img/hotel-panorama.png">
+</div>
+
+<div align="center">
+    <img src="img/room-panorama.png">
+</div>
+
+<div align="center">
+    <img src="img/example-panorama.png">
+</div>
