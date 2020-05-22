@@ -1,2 +1,2 @@
-# panorama-stitching
+# Panorama Stitching
  
