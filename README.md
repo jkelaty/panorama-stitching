@@ -2,8 +2,6 @@
 
 Project which implements a fully-featured command line program using OpenCV to perform image stitching to create panorama images. Uses two other header-only libraries for parsing command line arguments and for GUI features, such as a file explorer for selecting images, image panorama previewing, and notifications to indicate the status of the program.
 
-Jonathan Kelaty
-
 ## Usage
 
 To run program, ensure OpenCV is installed. Adjust the include path of the makefile if necessary (it probably is), and ensure the other dependencies in the **include** subdirectory are present. To compile:
