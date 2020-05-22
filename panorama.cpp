@@ -1,7 +1,11 @@
 /// @author Jonathan Kelaty
 /// @date 2020-05-21
 /// @file CS Vision - Final Project
-/// @brief Panorama Stitching
+/// @brief This program is a fully-featured implementation of panorama
+/// image stitching using OpenCV. This program is intended to be used
+/// in the command line, but has GUI features for ease of use, such as
+/// for uploading images, previewing panorama, and other notifications
+/// which gives the user relevant status updates during execution.
 
 // STL includes
 #include <iostream>
@@ -17,21 +21,25 @@
 #include "includes/cxxopts.hpp"
 #include "includes/portable-file-dialogs.h"
 
+// Used to tracking arg parsing status
 enum class Status {
     OK,
     EXIT,
     ERROR
 };
 
+// QOL
 typedef std::string Filename;
 typedef std::string Color;
 typedef cv::Mat Image;
 
+// Terminal text colors
 const Color YELLOW = "\e[93m";
 const Color GREEN  = "\e[32m";
 const Color CYAN   = "\e[36m";
 const Color RED    = "\e[31m";
 
+// ASCII character codes
 const int RETURN = 13;
 const int ESCAPE = 27;
 
@@ -46,6 +54,12 @@ void promptSaveImage(const Image& image);
 void showNotification(const std::string& message);
 void showError(const std::string& message);
 
+/**
+ * Main entry for program. Expects command line arguments.
+ * Use -h or --help to see available commands.
+ * 
+ * @return 0 Program terminated successfully, else error
+ */
 int main(int argc, char* argv[]) {
     std::vector<Image> images;
 
